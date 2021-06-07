@@ -1,0 +1,23 @@
+{
+  "name": "globalbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LolingLifeReal/GlobalBot.git"
+  },
+  "author": "Loling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LolingLifeReal/GlobalBot/issues"
+  },
+  "homepage": "https://github.com/LolingLifeReal/GlobalBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
