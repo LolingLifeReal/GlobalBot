@@ -13,5 +13,6 @@ module.exports = {
         message.author.send(newEmbed)
         message.channel.send('Sent to your dms!')
         console.log("Help was executed")   
+        
     }
 }
