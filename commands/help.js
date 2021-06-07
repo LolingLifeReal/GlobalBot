@@ -12,7 +12,6 @@ module.exports = {
         .setDescription("The messages can be in uppercase or lower")
         message.author.send(newEmbed)
         message.channel.send('Sent to your dms!')
-        console.log("Help was executed")
-        
+        console.log("Help was executed")   
     }
 }
