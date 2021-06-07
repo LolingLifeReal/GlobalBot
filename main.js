@@ -28,10 +28,6 @@ client.on('message', message =>{
       client.commands.get('ping').execute(message, args);
     }else if(command === 'purge'){
         client.commands.get('purge').execute(message, args, client, Discord)
-    }else if(command === 'kick'){
-        client.commands.get('kick').execute(message, args, client, Discord)
-    }else if(command === 'ban'){
-        client.commands.get('ban').execute(message, args, client, Discord)
     }else if(command === 'help'){
         client.commands.get('help').execute(message, args, Discord)
     }
