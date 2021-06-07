@@ -38,19 +38,14 @@ client.on('message', message =>{
 });
 
 
-
-
-
-
-
-
-
+//-----------------------------------------------------------------------------------
 
 
 
 
 client.on("ready", () => {
     console.log(`Dog Shit! ${client.user.tag}`)
+    client.user.setActivity("Watching " + "Global Survivor!");
 })
 
 
