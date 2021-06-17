@@ -10,6 +10,7 @@ module.exports = {
         .addField("Avatar", "```;Av @{Member}``` \n ```;Avatar @{Member}```")
         .addField("Spin (Admin Only)", "```;Spin```")
         .addField("Global Games", "```;Roblox```")
+        .addField("Suggest", "```;Suggest {Suggestion}```")
         .setDescription("The messages can be in uppercase or lower")
         message.author.send(newEmbed)
         message.channel.send('Sent to your dms!')
