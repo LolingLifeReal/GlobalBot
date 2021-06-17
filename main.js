@@ -12,26 +12,30 @@ require('dotenv').config();
 
 // --------------------------------------------------------------------------------
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-for(const file of commandFiles){
-    const command  = require(`./commands/${file}`);
+for (const file of commandFiles) {
+    const command = require(`./commands/${file}`);
 
     client.commands.set(command.name, command);
 }
 
-client.on('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
-    
+client.on('message', message => {
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if(command === 'ping'){
-      client.commands.get('ping').execute(message, args);
-    }else if(command === 'purge'){
+    if (command === 'ping') {
+        client.commands.get('ping').execute(message, args);
+    } else if (command === 'purge') {
         client.commands.get('purge').execute(message, args, client, Discord)
-    }else if(command === 'help'){
+    } else if (command === 'help') {
         client.commands.get('help').execute(message, args, Discord)
-    }else if(command === "spin"){
+    } else if (command === "spin") {
         client.commands.get('spin').execute(Discord, client, message, args)
+    } else if (command === 'av') {
+        client.commands.get('avatar').execute(message, args, Discord, client)
+    } else if (command === 'avatar') {
+        client.commands.get('avatar').execute(message, args, Discord, client)
     }
 });
 
@@ -43,7 +47,7 @@ client.on('message', message =>{
 
 client.on("ready", () => {
     console.log(`Dog Shit! ${client.user.tag}`)
-    client.user.setActivity("Watching " + "Global Survivor!");
+    client.user.setActivity("Global Survivor!", { type: 'WATCHING', status: 'dnd' });
 })
 
 
