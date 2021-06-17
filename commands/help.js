@@ -6,7 +6,7 @@ module.exports = {
         .setColor("RANDOM")
         .setTitle("Here are the list of commands")
         .addField("Ping", `;Ping`)
-        .addField("Purge", `;Purge {Ammount}`)
+        .addField("Purge", `;Purge {Amount}`)
         .setDescription("The messages can be in uppercase or lower")
         message.author.send(newEmbed)
         message.channel.send('Sent to your dms!')
