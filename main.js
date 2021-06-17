@@ -17,6 +17,7 @@ for (const file of commandFiles) {
 
     client.commands.set(command.name, command);
 }
+//---------------------------------------------------------------------------------------------
 
 client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -26,8 +27,6 @@ client.on('message', message => {
 
     if (command === 'ping') {
         client.commands.get('ping').execute(message, args);
-    } else if (command === 'purge') {
-        client.commands.get('purge').execute(message, args, client, Discord)
     } else if (command === 'help') {
         client.commands.get('help').execute(message, args, Discord)
     } else if (command === "spin") {
@@ -59,7 +58,7 @@ client.on("ready", () => {
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
-// --------------------------------------------------------------------------------
-// --------------------------------------------------------------------------------
-// --------------------------------------------------------------------------------
+
+
+
 client.login(process.env.token)
