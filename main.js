@@ -36,6 +36,8 @@ client.on('message', message => {
         client.commands.get('avatar').execute(message, args, Discord, client)
     } else if (command === 'avatar') {
         client.commands.get('avatar').execute(message, args, Discord, client)
+    } else if (command === 'roblox') {
+        client.commands.get('roblox').execute(message, args, Discord, client)
     }
 });
 
