@@ -30,6 +30,8 @@ client.on('message', message =>{
         client.commands.get('purge').execute(message, args, client, Discord)
     }else if(command === 'help'){
         client.commands.get('help').execute(message, args, Discord)
+    }else if(command === "spin"){
+        client.commands.get('spin').execute(Discord, client, message, args)
     }
 });
 
