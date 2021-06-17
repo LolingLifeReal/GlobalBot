@@ -10,8 +10,11 @@ module.exports = {
 
             let y = i[Math.floor(i.length * Math.random())]
 
+            const embedsss = new Discord.MessageEmbed()
+            .setTitle(`Your prize is... ${y}`)
+            .setColor("#30D5C8")
 
-            message.channel.send(`Your prize is... ${y}`)
+            message.channel.send(embedsss)
         }
     }
 }

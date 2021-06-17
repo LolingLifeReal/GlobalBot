@@ -3,7 +3,7 @@ module.exports = {
     description: "This command shows all the comands",
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
-            .setColor("DARK BLUE")
+            .setColor("#30D5C8")
             .setTitle("Here are the list of commands")
             .addField("Purge", "```;Purge {Amount}```")
             .addField("Avatar", "```;Av @{Member}``` \n ```;Avatar @{Member}```")

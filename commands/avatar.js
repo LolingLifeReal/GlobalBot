@@ -9,7 +9,7 @@ module.exports = {
 
         
             .setImage(target.user.displayAvatarURL({ dynamic: true, size: 1024 }))
-            .setColor("RANDOM")
+            .setColor("#30D5C8")
 
 
 
