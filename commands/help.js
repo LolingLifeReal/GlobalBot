@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
             .setColor("#30D5C8")
             .setTitle("Here are the list of commands")
-            .addField("Avatar", "```;Av @{Member}``` \n ```;Avatar @{Member}```")
+            .addField("Avatar", "```;Avatar @{Member}```")
             .addField("Spin (Admin Only)", "```;Spin```")
             .addField("Global Games", "```;Roblox```")
             .addField("Suggest", "```;Suggest {Suggestion}```")
