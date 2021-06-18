@@ -1,5 +1,5 @@
 moudle.exports = {
-  name: "hawaii"
+  name: "hawaii",
 execute(message, args, Discord, client) {
     const RobloxEmbed = new Discord.MessageEmbed()
       .setColor("#30D5C8")
