@@ -39,6 +39,16 @@ client.on('message', message => {
         client.commands.get('roblox').execute(message, args, Discord, client)
     } else if (command === 'suggest') {
         client.commands.get('suggest').execute(message, args, Discord, client)
+    } else if (command === 'hawaii') {
+        client.commands.get('hawaii').execute(message, args, Discord, client)
+    } else if (command === 'wildwest') {
+        client.commands.get('wildwest').execute(message, args, Discord, client)
+    } else if (command === 'classic') {
+        client.commands.get('classic').execute(message, args, Discord, client)
+    } else if (command === 'southpole') {
+        client.commands.get('southpole').execute(message, args, Discord, client)
+    } else if (command === 'murderisland') {
+        client.commands.get('murderisland').execute(message, args, Discord, client)
     }
 });
 
