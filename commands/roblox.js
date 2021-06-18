@@ -1,23 +1,19 @@
 module.exports = {
-    name: 'help',
-    description: "This command shows all the comands",
-    execute(message, args, Discord) {
-        const newEmbed = new Discord.MessageEmbed()
-            .setColor("#30D5C8")
-            .setTitle("Here are the list of commands")
-            .addField("Avatar", "```;Avatar @{Member}```")
-            .addField("Spin (Admin Only)", "```;Spin```")
-            .addField("Global Games", "```;Roblox```")
-            .addField("Suggest", "```;Suggest {Suggestion}```")
-            .addField("Global Survivor: Classic", "```;Classic```")
-            .addField("Global Survivor: Hawaii", "```;Hawaii```")
-            .addField("Global Survivor: Murder Island", "```;MurderIsland```")
-            .addField("Global Survivor: South Pole", "```;SouthPole```")
-            .addField("Global Survivor: Wild West", "```;WildWest```")
-            .setDescription("The messages can be in uppercase or lower")
-        message.author.send(newEmbed)
-        message.channel.send('Sent to your dms!')
-        console.log("Help was executed")
+    name: 'roblox',
+    execute(message, args, Discord, client) {
 
+        const RobloxEmbed = new Discord.MessageEmbed()
+            .setTitle("Here are all of our games")
+            .setColor("#30D5C8")
+            .addField("Global Survivor: Classic", "\n\n\n https://www.roblox.com/games/6439796398/Global-Survivor-Classic? \n\n\n")
+            .addField("Global Survivor: Hawaii", "\n\n\n https://www.roblox.com/games/6454408917/Global-Survivor-Hawaii \n\n\n")
+            .addField("Global Survivor: Winner's Hall", "\n\n\n https://www.roblox.com/games/6445352622/Global-Survivor-Winners-Hall \n\n\n")
+            .addField("Global Survivor: Murder Island", "\n\n\n https://www.roblox.com/games/6439842558/Global-Survivor-Murder-Island \n\n\n")
+            .addField("Global Survivor: South Pole", "\n\n\n https://www.roblox.com/games/6439774225/Global-Survivor-South-Pole \n\n\n")
+            .addField("Global Survivor: Wild West", "\n\n\n https://www.roblox.com/games/6736859835/Global-Survivor-Wild-West \n\n\n")
+            //.addField("Global Survivor: Homestore", "\n\n\n https://www.roblox.com/games/6736859835/Global-Survivor-Wild-West \n\n\n")
+
+
+        message.channel.send(RobloxEmbed)
     }
 }
