@@ -1,4 +1,4 @@
-moudle.exports = {
+module.exports = {
   name: "southpole",
   execute(message, args, Discord, client) {
     const RobloxEmbed = new Discord.MessageEmbed()
