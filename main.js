@@ -4,6 +4,8 @@ const client = new Discord.Client;
 
 client.commands = new Discord.Collection();
 
+client.aliases = new Discord.Collection();
+
 const fs = require('fs');
 
 const prefix = ';';
@@ -13,7 +15,7 @@ require('dotenv').config();
 // --------------------------------------------------------------------------------
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
+    const command = require(`./commands/${file}`) || client.commands.find(a => a.aliases && a.aliases.includes(cmd));
 
     client.commands.set(command.name, command);
 }
@@ -43,7 +45,7 @@ client.on('message', message => {
         client.commands.get('hawaii').execute(message, args, Discord, client)
     } else if (command === 'wildwest') {
         client.commands.get('wildwest').execute(message, args, Discord, client)
-    } else if (command === 'classic') {
+    } else if (commande === 'classic') {
         client.commands.get('classic').execute(message, args, Discord, client)
     } else if (command === 'southpole') {
         client.commands.get('southpole').execute(message, args, Discord, client)

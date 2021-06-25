@@ -2,9 +2,11 @@ module.exports = {
     name: "spin",
     description: "Spins booster prize",
     execute(Discord, client, message, args) {
+        
+        message.delete()
 
         if (message.member.hasPermission("ADMINISTRATOR")) {
-
+            
 
             let i = ["**GFX**", "**Role**", "**Command**", "**Emoji**", "**DJ**"]
 
