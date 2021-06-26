@@ -48,7 +48,7 @@ client.on('message', message => {
         client.commands.get('hawaii').execute(message, args, Discord, client)
     } else if (command === 'wildwest') {
         client.commands.get('wildwest').execute(message, args, Discord, client)
-    } else if (commande === 'classic') {
+    } else if (command === 'classic') {
         client.commands.get('classic').execute(message, args, Discord, client)
     } else if (command === 'southpole') {
         client.commands.get('southpole').execute(message, args, Discord, client)
