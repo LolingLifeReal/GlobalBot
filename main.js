@@ -18,6 +18,9 @@ for (const file of commandFiles) {
     const command = require(`./commands/${file}`) || client.commands.find(a => a.aliases && a.aliases.includes(cmd));
 
     client.commands.set(command.name, command);
+
+
+    const clientshitt = client.commands
 }
 //---------------------------------------------------------------------------------------------
 
