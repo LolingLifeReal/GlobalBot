@@ -1,5 +1,5 @@
-const ytdl = require('ytdl-core');
-const ytSearch = require('yt-search');
+//const ytdl = require('ytdl-core');
+//const ytSearch = require('yt-search');
 
 
 const queue = new Map();
