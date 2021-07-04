@@ -8,7 +8,7 @@ client.aliases = new Discord.Collection();
 
 const fs = require('fs');
 
-const prefix = ';';
+const prefix = 'g';
 
 require('dotenv').config();
 
@@ -65,7 +65,7 @@ client.on('message', message => {
 
 client.on("ready", () => {
     console.log(`Dog Shit! ${client.user.tag}`)
-    client.user.setActivity("Global Survivor!", { type: 'WATCHING', status: 'dnd' });
+    client.user.setActivity("Global Survivor! gHelp", { type: 'WATCHING', status: 'dnd' });
 })
 
 
