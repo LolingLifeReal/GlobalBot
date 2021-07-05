@@ -34,8 +34,6 @@ client.on('message', message => {
         client.commands.get('ping').execute(message, args);
     } else if (command === 'help') {
         client.commands.get('help').execute(message, args, Discord)
-    } else if (command === "spin") {
-        client.commands.get('spin').execute(Discord, client, message, args)
     } else if (command === 'av') {
         client.commands.get('avatar').execute(message, args, Discord, client)
     } else if (command === 'avatar') {
@@ -54,9 +52,7 @@ client.on('message', message => {
         client.commands.get('southpole').execute(message, args, Discord, client)
     } else if (command === 'murderisland') {
         client.commands.get('murderisland').execute(message, args, Discord, client)
-    } else if (message.content === "gracie") {
-        client.commands.get('gracie').execute(message, args, Discord, client)
-    }
+    } 
 });
 
 
