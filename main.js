@@ -52,7 +52,9 @@ client.on('message', message => {
         client.commands.get('southpole').execute(message, args, Discord, client)
     } else if (command === 'murderisland') {
         client.commands.get('murderisland').execute(message, args, Discord, client)
-    } 
+    } else if (command === 'test') {
+        client.commands.get('test').execute(message, args, Discord, client)
+    }
 });
 
 
