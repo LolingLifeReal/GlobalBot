@@ -15,8 +15,8 @@ module.exports = {
             .setDescription(messageArgs);
 
         channel.send(embed).then((msg) => {
-            msg.react('👍');
-            msg.react('👎');
+            msg.react('<a:Tick:865695136616022046>');
+            msg.react('<a:Xmark:865695136688242729>');
             message.delete();
         }).catch((err) => {
             throw err;
