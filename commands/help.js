@@ -14,7 +14,7 @@ module.exports = {
             .addField("Global Survivor: Murder Island", "```gMurderIsland```")
             .addField("Global Survivor: South Pole", "```gSouthPole```")
             .addField("Global Survivor: Wild West", "```gWildWest```")
-            .addField("Global Survivor: DragRace", "```gDragRace```"
+            .addField("Global Survivor: DragRace", "```gDragRace```")
             .setDescription("The messages can be in uppercase or lower")
         
         
