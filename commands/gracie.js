@@ -1,6 +1,8 @@
 module.exports = {
     name: 'gracie',
     execute(message, args, Discord, client) {
-        message.channel.send("🥜🍒");
+        message.react(🥜)
+        message.react(🍒)
+        message.channel.send("🥜🍒")
     }
 }
