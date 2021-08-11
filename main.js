@@ -56,8 +56,6 @@ client.on('message', message => {
         client.commands.get('gracie').execute(message, args, Discord, client)
     } else if (command === 'dragrace') {
         client.commands.get('dragrace').execute(message, args, Discord, client)
-    } else if (command === 'kebab') {
-        client.commands.get('gurll').execute(message, args, Discord, client)
     }
 });
 
